@@ -3,276 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Curriculum Vitae</title>
+    <title>OLOWOSELU OLUWAGBENGA - PROJECT MANAGER</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">Portfolio</div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+    <!-- Minimalist Background -->
+    <div class="background">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">OLOWOSELU</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#work" class="nav-link">WORK</a></li>
+                <li><a href="#about" class="nav-link">ABOUT</a></li>
+                <li><a href="#contact" class="nav-link">CONTACT</a></li>
             </ul>
-            <div class="hamburger">
+            <div class="hamburger" id="hamburger">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
-    <main>
-        <section id="hero" class="hero">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <div class="ooo-logo">OOO</div>
-                    <h1 class="name-lines">
-                        <span class="name-line">OLOWOSELU</span>
-                        <span class="name-line">OLUWAGBENGA</span>
-                        <span class="name-line">OLAMILEKAN</span>
-                    </h1>
-                    <p class="subtitle">Cloud Security Engineer</p>
-                    <p class="description">Cloud Security Engineer with strong foundation in analytical reasoning, policy awareness, governance, documentation, and stakeholder communication.</p>
-                    <div class="hero-buttons">
-                        <a href="#contact" class="btn btn-primary">Contact Me</a>
-                        <a href="#experience" class="btn btn-secondary">View Experience</a>
-                        <a href="Olowoselu Oluwagbenga Olamilekan — Résumé.pdf" class="btn btn-secondary" target="_blank" download>Download Resume</a>
+    <!-- Live Clock and Calendar Widget -->
+    <div class="time-widget" id="timeWidget">
+        <div class="clock-container">
+            <div class="time-display" id="timeDisplay">00:00:00</div>
+            <div class="date-display" id="dateDisplay">Loading...</div>
+            <div class="location-display" id="locationDisplay">
+                <i class="fas fa-map-marker-alt"></i>
+                <span id="locationText">Detecting location...</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <p class="hero-greeting">I'm a Cloud Security Engineer</p>
+            <div class="hero-year">2026</div>
+            <h1 class="hero-name">OLOWOSELU OLUWAGBENGA</h1>
+            <h2 class="hero-title">PROJECT MANAGER</h2>
+            <p class="hero-description">Nigerian-based project manager specializing in DevSecOps, cloud security, and infrastructure automation. Expert in leading teams, managing complex projects, and delivering secure solutions at scale.</p>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="section">
+        <div class="container">
+            <h2 class="section-title">Selected work</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-category">CLOUD SECURITY</div>
+                    <h3>Secure VPC Network Architecture</h3>
+                    <p class="project-description">Comprehensive AWS VPC network architecture implementation with multi-tier security layers for secure cloud infrastructure deployment.</p>
+                    <a href="https://github.com/OlamiOla" class="project-link" target="_blank">View Project →</a>
+                </div>
+                <div class="project-card">
+                    <div class="project-category">IAM MANAGEMENT</div>
+                    <h3>IAM User and Role Management</h3>
+                    <p class="project-description">Automated AWS IAM user and role management system implementing least-privilege access policies and MFA enforcement.</p>
+                    <a href="https://github.com/OlamiOla" class="project-link" target="_blank">View Project →</a>
+                </div>
+                <div class="project-card">
+                    <div class="project-category">SERVER SECURITY</div>
+                    <h3>Secure EC2 Web Server</h3>
+                    <p class="project-description">Hardened EC2 web server deployment with security groups, SSH key management, and automated patching.</p>
+                    <a href="https://github.com/OlamiOla" class="project-link" target="_blank">View Project →</a>
+                </div>
+                <div class="project-card">
+                    <div class="project-category">SECURITY AUDIT</div>
+                    <h3>AWS Security Audit & Hardening</h3>
+                    <p class="project-description">Automated AWS security audit and hardening framework with compliance checks against CIS benchmarks.</p>
+                    <a href="https://github.com/OlamiOla" class="project-link" target="_blank">View Project →</a>
+                </div>
+                <div class="project-card">
+                    <div class="project-category">DATA SECURITY</div>
+                    <h3>Secure S3 Storage</h3>
+                    <p class="project-description">Secure S3 bucket implementation with encryption, bucket policies, and automated compliance monitoring.</p>
+                    <a href="https://github.com/OlamiOla" class="project-link" target="_blank">View Project →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">Welcome, I'm Olowoselu!</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Olowoselu is a project manager and DevSecOps engineer with a passion for building secure infrastructure and leading teams to deliver impactful solutions. Combining technical expertise in cloud security, infrastructure automation, and compliance with strong leadership skills in project management and stakeholder communication.</p>
+                    <p>Specializes in shifting security left by implementing automated security controls, vulnerability scanning, and compliance checks into DevOps workflows. Experienced in building secure cloud infrastructure, managing secrets, implementing RBAC policies, and ensuring continuous compliance through automation while leading cross-functional teams.</p>
+                </div>
+                <div class="skills-section">
+                    <h3>SKILLS</h3>
+                    <div class="skills-list">
+                        <span class="skill-item">Project Management</span>
+                        <span class="skill-item">Cloud Security</span>
+                        <span class="skill-item">DevSecOps</span>
+                        <span class="skill-item">Infrastructure as Code</span>
+                        <span class="skill-item">AWS</span>
+                        <span class="skill-item">Terraform</span>
+                        <span class="skill-item">CI/CD Security</span>
+                        <span class="skill-item">Team Leadership</span>
+                        <span class="skill-item">Risk Assessment</span>
+                        <span class="skill-item">Compliance Automation</span>
+                        <span class="skill-item">Stakeholder Management</span>
+                        <span class="skill-item">AND MORE!</span>
                     </div>
                 </div>
-                <img src="Image..jpeg" alt="Olowoselu Oluwagbenga Olamilekan" class="profile-image">
-            </div>
-        </section>
-
-        <section id="about" class="section">
-            <div class="container">
-                <h2>About Me</h2>
-                <div class="about-content">
-                    <div class="about-text">
-                        <p>Cloud Security Engineer with a strong foundation in analytical reasoning, policy awareness, governance, documentation, and stakeholder communication. Brings a philosophy background into security work through clear risk thinking, ethical decision-making, evidence-based analysis, and disciplined communication.</p>
-                        <p>Focused on cloud security posture, identity and access management, vulnerability reduction, compliance readiness, incident response support, and secure collaboration across technical and non-technical teams.</p>
-                        <p><strong>Cloud Security Strengths:</strong></p>
-                        <p>🔹 Cloud Security: Security posture review, security configuration checks, shared-responsibility awareness, risk documentation, and remediation coordination.</p>
-                        <p>🔹 IAM & Access: Identity and access governance, least-privilege principles, role/access review, MFA awareness, and privileged-access risk reduction.</p>
-                        <p>🔹 Monitoring: Security alert triage, log review, incident documentation, vulnerability tracking, and escalation support.</p>
-                        <p>🔹 Governance: Policy interpretation, compliance documentation, evidence gathering, stakeholder reporting, and process improvement.</p>
-                        <p>🔹 Core Tools: Microsoft Office Suite, Google Workspace, collaborative documentation tools, and fast adaptation to security platforms and cloud consoles.</p>
-                    </div>
-                    <div class="about-info">
-                        <div class="info-item">
-                            <span class="label">Email:</span>
-                            <span class="value">Olowoseluoluwagbenga@gmail.com</span>
-                        </div>
-                        <div class="info-item">
-                            <span class="label">LinkedIn:</span>
-                            <span class="value"><a href="https://linkedin.com/in/oluwagbenga-olowoselu" target="_blank" style="color: inherit; text-decoration: none;">linkedin.com/in/oluwagbenga-olowoselu</a></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="experience" class="section">
-            <div class="container">
-                <h2>Work Experience</h2>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h3>Cloud Security Engineer</h3>
-                            <p class="company">Cloud Sentrics Limited | 2026 - Present</p>
-                            <ul>
-                                <li>Support secure cloud operations by reviewing cloud configurations, identity access controls, and security posture indicators against practical risk and compliance expectations.</li>
-                                <li>Document security observations, remediation actions, and stakeholder updates in a clear format that helps technical and management teams make timely decisions.</li>
-                                <li>Assist with vulnerability management, alert review, incident notes, access governance, and continuous improvement of security controls.</li>
-                                <li>Apply strong analytical and ethical reasoning to assess risk, prioritize issues, and communicate security recommendations with clarity.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h3>Administration & Human Resources Department</h3>
-                            <p class="company">Lagos State Ministry of Tourism, Arts and Culture, Alausa, Ikeja | NYSC, 2025 - Dec 2025</p>
-                            <ul>
-                                <li>Managed administrative documentation, internal communication, file organization, and data collation in a public-sector environment.</li>
-                                <li>Supported HR coordination, visitor/stakeholder assistance, and office workflow improvements with attention to confidentiality and service quality.</li>
-                                <li>Strengthened professional communication, records handling, and cross-functional support skills now applied to security documentation and governance.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h3>Legislative Council Member</h3>
-                            <p class="company">Osun State University Student Union | 2023 - 2024</p>
-                            <ul>
-                                <li>Participated in drafting and reviewing student policies, legislative discussions, and governance debates.</li>
-                                <li>Built practical experience in policy review, stakeholder representation, structured argumentation, and evidence-led decision-making.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h3>Special Advisor to the Speaker of the College Assembly</h3>
-                            <p class="company">Osun State University | 2022 - 2023</p>
-                            <ul>
-                                <li>Provided advisory support on student governance matters, communication planning, and meeting preparation.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h3>Student Representative Council Member</h3>
-                            <p class="company">Osun State University | 2021 - 2022</p>
-                            <ul>
-                                <li>Represented student interests and contributed to academic, leadership, and community discussions.</li>
-                            </ul>
-                        </div>
+                <div class="connections-section">
+                    <h3>CONNECTIONS</h3>
+                    <div class="connections-list">
+                        <span class="connection-item">Cloud Sentrics Limited</span>
+                        <span class="connection-item">Lagos State Ministry</span>
+                        <span class="connection-item">Osun State University</span>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="education" class="section">
-            <div class="container">
-                <h2>Education</h2>
-                <div class="education-grid">
-                    <div class="education-card">
-                        <h3>Bachelor of Arts in Philosophy</h3>
-                        <p class="institution">Osun State University, Nigeria</p>
-                        <p class="year">September 2024</p>
-                        <p class="description">Final-year thesis: "The Idea of Evil in Gottfried Leibniz's Philosophy." Organized and participated in philosophy conferences and academic discussions.</p>
-                    </div>
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Let's connect!</h2>
+            <div class="contact-content">
+                <div class="contact-links">
+                    <a href="https://www.Linkedin.com/in/oluwagbenga-olowoselu" class="contact-link" target="_blank">LINKEDIN</a>
+                    <a href="mailto:Olowoseluoluwagbenga@gmail.com" class="contact-link">EMAIL</a>
+                    <a href="https://wa.me/2348082571617" class="contact-link" target="_blank">WHATSAPP</a>
+                    <a href="https://github.com/OlamiOla" class="contact-link" target="_blank">GITHUB</a>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="skills" class="section">
-            <div class="container">
-                <h2>Skills</h2>
-                <div class="skills-container">
-                    <div class="skill-category">
-                        <h3>Cloud Security Skills</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Cloud Security</span>
-                            <span class="skill-tag">IAM & Access</span>
-                            <span class="skill-tag">Monitoring</span>
-                            <span class="skill-tag">Governance</span>
-                            <span class="skill-tag">Microsoft Office Suite</span>
-                            <span class="skill-tag">Google Workspace</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Analytical Skills</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Critical Thinking</span>
-                            <span class="skill-tag">Logical Reasoning</span>
-                            <span class="skill-tag">Research</span>
-                            <span class="skill-tag">Problem Solving</span>
-                            <span class="skill-tag">Ethical Decision-Making</span>
-                            <span class="skill-tag">Attention to Detail</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Communication Skills</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Professional Writing</span>
-                            <span class="skill-tag">Argumentation</span>
-                            <span class="skill-tag">Public Speaking</span>
-                            <span class="skill-tag">Debate</span>
-                            <span class="skill-tag">Presentation</span>
-                            <span class="skill-tag">Stakeholder Communication</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Leadership Skills</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Team Collaboration</span>
-                            <span class="skill-tag">Time Management</span>
-                            <span class="skill-tag">Organization</span>
-                            <span class="skill-tag">Adaptability</span>
-                            <span class="skill-tag">Quick Learning</span>
-                            <span class="skill-tag">Student Governance Leadership</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Languages</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">English - Fluent</span>
-                            <span class="skill-tag">Yoruba - Fluent</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="projects" class="section">
-            <div class="container">
-                <h2>Projects</h2>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <h3>Cloud Security Assessment</h3>
-                        <p class="project-description">Comprehensive security posture review and vulnerability assessment for cloud infrastructure.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">Cloud Security</span>
-                            <span class="project-tag">Risk Assessment</span>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <h3>IAM Policy Implementation</h3>
-                        <p class="project-description">Identity and access management policy development and implementation with least-privilege principles.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">IAM</span>
-                            <span class="project-tag">Governance</span>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <h3>Security Documentation System</h3>
-                        <p class="project-description">Structured documentation framework for security incidents, compliance evidence, and stakeholder reporting.</p>
-                        <div class="project-tags">
-                            <span class="project-tag">Documentation</span>
-                            <span class="project-tag">Compliance</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="section">
-            <div class="container">
-                <h2>Contact Me</h2>
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <h3>Email</h3>
-                            <p>Olowoseluoluwagbenga@gmail.com</p>
-                        </div>
-                        <div class="contact-item">
-                            <h3>WhatsApp</h3>
-                            <p><a href="https://wa.me/2348082571617" target="_blank" style="color: inherit; text-decoration: none;">+234 808 257 1617</a></p>
-                        </div>
-                    </div>
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-group">
-                            <input type="text" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea placeholder="Your Message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 OLOWOSELU OLUWAGBENGA OLAMILEKAN. All rights reserved.</p>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 OLOWOSELU OLUWAGBENGA</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
