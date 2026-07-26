@@ -168,6 +168,33 @@ nav {
     text-align: left;
 }
 
+.ooo-logo {
+    font-size: 4rem;
+    font-weight: 900;
+    background: var(--gradient-2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1rem;
+    letter-spacing: 0.5rem;
+}
+
+.name-lines {
+    margin: 1.5rem 0;
+    line-height: 1.2;
+}
+
+.name-line {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 800;
+    background: var(--gradient-2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
 .profile-image {
     width: 250px;
     height: 250px;
@@ -533,6 +560,69 @@ nav {
 .skill-tag:hover {
     transform: translateY(-3px) scale(1.05);
     box-shadow: var(--shadow-md);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background: var(--section-bg);
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: var(--shadow-lg);
+    transition: all 0.3s ease;
+    border: 1px solid var(--border-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.project-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--gradient-2);
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+}
+
+.project-card h3 {
+    background: var(--gradient-2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.project-description {
+    color: #cbd5e1;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.project-tag {
+    background: var(--gradient-3);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
 }
 
 .contact-content {
