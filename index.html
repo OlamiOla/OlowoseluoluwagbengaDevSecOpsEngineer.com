@@ -3,27 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OLOWOSELU OLUWAGBENGA - PROJECT MANAGER</title>
+    <title>Olowoselu Oluwagbenga | DevSecOps Engineer & Project Manager</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Minimalist Background -->
+    <!-- Animated Background -->
     <div class="background">
         <div class="gradient-orb orb-1"></div>
         <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+        <div class="grid-pattern"></div>
     </div>
 
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="#home">OLOWOSELU</a>
+                <a href="#home">
+                    <span class="logo-text">OO</span>
+                </a>
             </div>
             <ul class="nav-menu">
-                <li><a href="#work" class="nav-link">WORK</a></li>
-                <li><a href="#welcome" class="nav-link">WELCOME</a></li>
-                <li><a href="#contact" class="nav-link">CONTACT</a></li>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <div class="hamburger" id="hamburger">
                 <span></span>
@@ -33,90 +40,433 @@
         </div>
     </nav>
 
-
-    <!-- Welcome Section -->
-    <section id="welcome" class="section">
-        <div class="container">
-            <h2 class="section-title">Welcome, I'm Olowoselu!</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Olowoselu is a project manager and DevSecOps engineer with a passion for building secure infrastructure and leading teams to deliver impactful solutions. Combining technical expertise in cloud security, infrastructure automation, and compliance with strong leadership skills in project management and stakeholder communication.</p>
-                    <p>Specializes in shifting security left by implementing automated security controls, vulnerability scanning, and compliance checks into DevOps workflows. Experienced in building secure cloud infrastructure, managing secrets, implementing RBAC policies, and ensuring continuous compliance through automation while leading cross-functional teams.</p>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                <span>Available for opportunities</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">Hi, I'm</span>
+                <span class="title-name">Olowoselu Oluwagbenga</span>
+            </h1>
+            <p class="hero-subtitle">DevSecOps Engineer & Project Manager</p>
+            <p class="hero-description">
+                Building secure cloud infrastructure and leading teams to deliver impactful solutions at scale.
+            </p>
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">
+                    <span>View My Work</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <span>Get In Touch</span>
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <div class="hero-social">
+                <a href="https://www.linkedin.com/in/oluwagbenga-olowoselu" target="_blank" class="social-link">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/OlamiOla" target="_blank" class="social-link">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:Olowoseluoluwagbenga@gmail.com" class="social-link">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://wa.me/2348082571617" target="_blank" class="social-link">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="code-block">
+                <div class="code-header">
+                    <span class="code-dot red"></span>
+                    <span class="code-dot yellow"></span>
+                    <span class="code-dot green"></span>
+                    <span class="code-title">security-config.yaml</span>
                 </div>
-                <div class="skills-section">
-                    <h3>SKILLS</h3>
-                    <div class="skills-list">
-                        <span class="skill-item">Project Management</span>
-                        <span class="skill-item">Cloud Security</span>
-                        <span class="skill-item">DevSecOps</span>
-                        <span class="skill-item">Infrastructure as Code</span>
-                        <span class="skill-item">AWS</span>
-                        <span class="skill-item">Terraform</span>
-                        <span class="skill-item">CI/CD Security</span>
-                        <span class="skill-item">Team Leadership</span>
-                        <span class="skill-item">Risk Assessment</span>
-                        <span class="skill-item">Compliance Automation</span>
-                        <span class="skill-item">Stakeholder Management</span>
-                        <span class="skill-item">AND MORE!</span>
+                <div class="code-content">
+                    <pre><code><span class="code-key">security</span>:
+  <span class="code-key">encryption</span>: <span class="code-string">"AES-256"</span>
+  <span class="code-key">mfa_enabled</span>: <span class="code-boolean">true</span>
+  <span class="code-key">compliance</span>: <span class="code-string">"CIS"</span>
+  <span class="code-key">automation</span>: <span class="code-boolean">true</span>
+
+<span class="code-key">infrastructure</span>:
+  <span class="code-key">provider</span>: <span class="code-string">"AWS"</span>
+  <span class="code-key">regions</span>: [<span class="code-string">"us-east-1"</span>]
+  <span class="code-key">monitoring</span>: <span class="code-boolean">true</span></code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">About Me</span>
+                <h2 class="section-title">Passionate about secure infrastructure</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-content">
+                    <p class="about-text">
+                        I'm a Nigerian-based project manager and DevSecOps engineer with a passion for building secure infrastructure and leading teams to deliver impactful solutions. I combine technical expertise in cloud security, infrastructure automation, and compliance with strong leadership skills.
+                    </p>
+                    <p class="about-text">
+                        I specialize in shifting security left by implementing automated security controls, vulnerability scanning, and compliance checks into DevOps workflows. My experience spans building secure cloud infrastructure, managing secrets, implementing RBAC policies, and ensuring continuous compliance through automation.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">20+</span>
+                            <span class="stat-label">Happy Clients</span>
+                        </div>
                     </div>
                 </div>
-                <div class="connections-section">
-                    <h3>CONNECTIONS</h3>
-                    <div class="connections-list">
-                        <span class="connection-item">Cloud Sentrics Limited</span>
-                        <span class="connection-item">Lagos State Ministry</span>
-                        <span class="connection-item">Osun State University</span>
+                <div class="about-image">
+                    <div class="experience-card">
+                        <div class="experience-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Cloud Security</h3>
+                        <p>Expert in securing cloud infrastructure with best practices</p>
+                    </div>
+                    <div class="experience-card">
+                        <div class="experience-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3>Automation</h3>
+                        <p>Infrastructure as Code and CI/CD pipeline automation</p>
+                    </div>
+                    <div class="experience-card">
+                        <div class="experience-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Leadership</h3>
+                        <p>Leading cross-functional teams to deliver excellence</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Hero/Resume Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <p class="hero-greeting">I'm a Cloud Security Engineer</p>
-            <div class="hero-year">2026</div>
-            <h1 class="hero-name">OLOWOSELU OLUWAGBENGA</h1>
-            <h2 class="hero-title">PROJECT MANAGER</h2>
-            <p class="hero-description">Nigerian-based project manager specializing in DevSecOps, cloud security, and infrastructure automation. Expert in leading teams, managing complex projects, and delivering secure solutions at scale.</p>
+    <!-- Projects Section -->
+    <section id="projects" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">My Work</span>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-category">Cloud Security</div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Secure VPC Network Architecture</h3>
+                        <p class="project-description">Comprehensive AWS VPC network architecture with multi-tier security layers for secure cloud infrastructure deployment.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">AWS</span>
+                            <span class="tech-tag">Terraform</span>
+                            <span class="tech-tag">VPC</span>
+                        </div>
+                        <a href="https://github.com/OlamiOla" class="project-link" target="_blank">
+                            <span>View Project</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-category">IAM Management</div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>IAM User and Role Management</h3>
+                        <p class="project-description">Automated AWS IAM user and role management system implementing least-privilege access policies and MFA enforcement.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">AWS IAM</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Lambda</span>
+                        </div>
+                        <a href="https://github.com/OlamiOla" class="project-link" target="_blank">
+                            <span>View Project</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-category">Server Security</div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Secure EC2 Web Server</h3>
+                        <p class="project-description">Hardened EC2 web server deployment with security groups, SSH key management, and automated patching.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">EC2</span>
+                            <span class="tech-tag">Ansible</span>
+                            <span class="tech-tag">Security Groups</span>
+                        </div>
+                        <a href="https://github.com/OlamiOla" class="project-link" target="_blank">
+                            <span>View Project</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-category">Security Audit</div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>AWS Security Audit & Hardening</h3>
+                        <p class="project-description">Automated AWS security audit and hardening framework with compliance checks against CIS benchmarks.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Security Hub</span>
+                            <span class="tech-tag">CIS</span>
+                            <span class="tech-tag">Compliance</span>
+                        </div>
+                        <a href="https://github.com/OlamiOla" class="project-link" target="_blank">
+                            <span>View Project</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-category">Data Security</div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Secure S3 Storage</h3>
+                        <p class="project-description">Secure S3 bucket implementation with encryption, bucket policies, and automated compliance monitoring.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">S3</span>
+                            <span class="tech-tag">KMS</span>
+                            <span class="tech-tag">Encryption</span>
+                        </div>
+                        <a href="https://github.com/OlamiOla" class="project-link" target="_blank">
+                            <span>View Project</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-category">CI/CD</div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Secure CI/CD Pipeline</h3>
+                        <p class="project-description">End-to-end secure CI/CD pipeline with automated security scanning, vulnerability detection, and compliance checks.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Jenkins</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">SonarQube</span>
+                        </div>
+                        <a href="https://github.com/OlamiOla" class="project-link" target="_blank">
+                            <span>View Project</span>
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Work Section -->
-    <section id="work" class="section">
+    <!-- Skills Section -->
+    <section id="skills" class="section">
         <div class="container">
-            <h2 class="section-title">Selected work</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-category">CLOUD SECURITY</div>
-                    <h3>Secure VPC Network Architecture</h3>
-                    <p class="project-description">Comprehensive AWS VPC network architecture implementation with multi-tier security layers for secure cloud infrastructure deployment.</p>
-                    <a href="https://github.com/OlamiOla" class="project-link" target="_blank">View Project →</a>
+            <div class="section-header">
+                <span class="section-tag">Expertise</span>
+                <h2 class="section-title">Skills & Technologies</h2>
+            </div>
+            <div class="skills-container">
+                <div class="skills-category">
+                    <h3 class="skills-category-title">
+                        <i class="fas fa-cloud"></i>
+                        Cloud & Infrastructure
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-aws"></i>
+                            </div>
+                            <span>AWS</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-cubes"></i>
+                            </div>
+                            <span>Terraform</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-docker"></i>
+                            </div>
+                            <span>Docker</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-dharmachakra"></i>
+                            </div>
+                            <span>Kubernetes</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="project-card">
-                    <div class="project-category">IAM MANAGEMENT</div>
-                    <h3>IAM User and Role Management</h3>
-                    <p class="project-description">Automated AWS IAM user and role management system implementing least-privilege access policies and MFA enforcement.</p>
-                    <a href="https://github.com/OlamiOla" class="project-link" target="_blank">View Project →</a>
+                <div class="skills-category">
+                    <h3 class="skills-category-title">
+                        <i class="fas fa-shield-alt"></i>
+                        Security
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                            <span>DevSecOps</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-user-shield"></i>
+                            </div>
+                            <span>IAM</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-key"></i>
+                            </div>
+                            <span>Encryption</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <span>Compliance</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="project-card">
-                    <div class="project-category">SERVER SECURITY</div>
-                    <h3>Secure EC2 Web Server</h3>
-                    <p class="project-description">Hardened EC2 web server deployment with security groups, SSH key management, and automated patching.</p>
-                    <a href="https://github.com/OlamiOla" class="project-link" target="_blank">View Project →</a>
+                <div class="skills-category">
+                    <h3 class="skills-category-title">
+                        <i class="fas fa-code"></i>
+                        Development
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-js"></i>
+                            </div>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-infinity"></i>
+                            </div>
+                            <span>CI/CD</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="project-card">
-                    <div class="project-category">SECURITY AUDIT</div>
-                    <h3>AWS Security Audit & Hardening</h3>
-                    <p class="project-description">Automated AWS security audit and hardening framework with compliance checks against CIS benchmarks.</p>
-                    <a href="https://github.com/OlamiOla" class="project-link" target="_blank">View Project →</a>
+                <div class="skills-category">
+                    <h3 class="skills-category-title">
+                        <i class="fas fa-tasks"></i>
+                        Management
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-project-diagram"></i>
+                            </div>
+                            <span>Agile</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-users-cog"></i>
+                            </div>
+                            <span>Team Leadership</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <span>Risk Management</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <span>Stakeholder Mgmt</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="project-card">
-                    <div class="project-category">DATA SECURITY</div>
-                    <h3>Secure S3 Storage</h3>
-                    <p class="project-description">Secure S3 bucket implementation with encryption, bucket policies, and automated compliance monitoring.</p>
-                    <a href="https://github.com/OlamiOla" class="project-link" target="_blank">View Project →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Career</span>
+                <h2 class="section-title">Professional Experience</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2023 - Present</span>
+                        <h3>DevSecOps Engineer</h3>
+                        <p class="timeline-company">Cloud Sentrics Limited</p>
+                        <p class="timeline-description">Leading security initiatives, implementing automated security controls, and managing cloud infrastructure for enterprise clients.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2021 - 2023</span>
+                        <h3>IT Project Manager</h3>
+                        <p class="timeline-company">Lagos State Ministry</p>
+                        <p class="timeline-description">Managed multiple IT projects, coordinated cross-functional teams, and ensured timely delivery of government technology initiatives.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2019 - 2021</span>
+                        <h3>Systems Administrator</h3>
+                        <p class="timeline-company">Osun State University</p>
+                        <p class="timeline-description">Maintained university IT infrastructure, implemented security protocols, and provided technical support for academic departments.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -125,13 +475,59 @@
     <!-- Contact Section -->
     <section id="contact" class="section">
         <div class="container">
-            <h2 class="section-title">Let's connect!</h2>
+            <div class="section-header">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Let's Work Together</h2>
+            </div>
             <div class="contact-content">
-                <div class="contact-links">
-                    <a href="https://www.Linkedin.com/in/oluwagbenga-olowoselu" class="contact-link" target="_blank">LINKEDIN</a>
-                    <a href="mailto:Olowoseluoluwagbenga@gmail.com" class="contact-link">EMAIL</a>
-                    <a href="https://wa.me/2348082571617" class="contact-link" target="_blank">WHATSAPP</a>
-                    <a href="https://github.com/OlamiOla" class="contact-link" target="_blank">GITHUB</a>
+                <div class="contact-info">
+                    <p class="contact-description">
+                        I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Feel free to reach out!
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">Email</span>
+                                <a href="mailto:Olowoseluoluwagbenga@gmail.com">Olowoseluoluwagbenga@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">WhatsApp</span>
+                                <a href="https://wa.me/2348082571617">+234 808 257 1617</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin-in"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">LinkedIn</span>
+                                <a href="https://www.linkedin.com/in/oluwagbenga-olowoselu" target="_blank">Connect with me</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="contact-label">GitHub</span>
+                                <a href="https://github.com/OlamiOla" target="_blank">Check my repos</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-cta">
+                    <a href="mailto:Olowoseluoluwagbenga@gmail.com" class="btn btn-primary btn-large">
+                        <span>Send Me a Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -140,7 +536,29 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 OLOWOSELU OLUWAGBENGA</p>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">OO</span>
+                    <p>Building secure infrastructure, one project at a time.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/oluwagbenga-olowoselu" target="_blank" class="footer-social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/OlamiOla" target="_blank" class="footer-social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:Olowoseluoluwagbenga@gmail.com" class="footer-social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://wa.me/2348082571617" target="_blank" class="footer-social-link">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Olowoselu Oluwagbenga. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
