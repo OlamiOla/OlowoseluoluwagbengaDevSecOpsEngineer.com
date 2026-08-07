@@ -680,6 +680,32 @@ body {
     box-shadow: 0 20px 60px rgba(99, 102, 241, 0.2);
 }
 
+.project-card-in-progress {
+    border: 2px solid #f59e0b;
+    box-shadow: 0 0 20px rgba(245, 158, 11, 0.3);
+}
+
+.project-card-in-progress .project-image {
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.3) 0%, rgba(234, 88, 12, 0.3) 100%);
+}
+
+.project-card-in-progress .project-image::before {
+    background: 
+        radial-gradient(circle at 20% 50%, rgba(245, 158, 11, 0.4) 0%, transparent 50%),
+        radial-gradient(circle at 80% 50%, rgba(234, 88, 12, 0.4) 0%, transparent 50%);
+}
+
+.project-card-in-progress .project-category {
+    background: rgba(245, 158, 11, 0.3);
+    border: 1px solid rgba(245, 158, 11, 0.5);
+    color: #f59e0b;
+}
+
+.project-card-in-progress:hover {
+    border-color: #f59e0b;
+    box-shadow: 0 20px 60px rgba(245, 158, 11, 0.4);
+}
+
 .project-image {
     height: 200px;
     background: linear-gradient(135deg, rgba(99, 102, 241, 0.2) 0%, rgba(139, 92, 246, 0.2) 100%);
